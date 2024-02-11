@@ -1,1 +1,1 @@
-# Pacman-gem
+# Pacman-game
