@@ -1,0 +1,1508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="dd49014d-e6b2-4e6e-b925-662188b5c432"
+  name="Project" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="c9e3b53f-337c-475b-bddb-e8f05480409d"
+        name="Main_Menu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="761a182a-a263-4f81-8a7b-00ccefad0328"
+            isDerived="false"
+            sourceEndRoleName="Main_Menu"
+            targetEndRoleName="game"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1fa10da3-9c8f-411f-90fa-415fa824df26"
+              LastKnownName="game"
+              LastKnownLocation="Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="591cc027-21e5-4f38-8e16-a6f6dc25ce2a"
+                  name="Main_Menu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c15bdef6-cd7f-4853-a629-4330a1e6f342"
+                  name="game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="03543a8d-603a-4d54-9110-1557168a4e71"
+            name="TransformGroup objTG"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="37a05676-841a-4fde-b9b7-34531c5a0021"
+            name="position_Object"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18d5aba9-cfa5-40f5-8a21-7b1caaedae3e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+                      LastKnownName="TransformGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1c6284bf-d9ef-438b-af5b-b766026a03e8"
+            name="add_Child"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a62582c-13f2-4e5e-a97d-10d2ed7c7e0c"
+                  name="TransformGroup nextTG"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="210b9f72-f651-45e3-94fa-8c7d4b15b762"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+                      LastKnownName="TransformGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a900880e-8ca2-4088-a1de-05c57dd8c02f"
+            name="create_Object"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="498c30c5-43a8-41e2-8bd3-99b487b68826"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+                      LastKnownName="TransformGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1fa10da3-9c8f-411f-90fa-415fa824df26"
+        name="game"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="72fdac6d-edec-4966-ac68-8033b3499740"
+            name="serialVersionUID"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="cfdf874b-f3bc-48c1-9c62-29e55315dfa8"
+                LastKnownName="long"
+                LastKnownLocation="Project.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5e424ae3-fb2e-48c5-84b5-ddb4e85194ea"
+            name="JFrame frame"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d51718d1-55f5-4541-ae48-3eabb11a3a19"
+            name="PickTool picktool"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3650aab7-4e9a-47c6-8d36-636a2cdc8239"
+            name="Canvas3D canvas"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c99ee7d2-8e8d-468e-a7a7-383801637382"
+            name="Main_Menu[] Opt"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="c9e3b53f-337c-475b-bddb-e8f05480409d"
+                LastKnownName="Main_Menu"
+                LastKnownLocation="Project.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cd9da72f-3335-4864-b27d-e77893976e6c"
+            name="pacMan[] object3D"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="84288ade-9002-4870-adff-f85ae639e564"
+                LastKnownName="pacMan"
+                LastKnownLocation="Project.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c21fa38e-c156-4dea-a6a5-468ce8cf3d38"
+            name="OBJ_NUM"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Project.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c13ab769-0e83-45a3-aea5-d407f766c5e9"
+            name="TransformGroup Menu_Objects"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1486c7a8-c490-4296-a8d8-9646cd4474cd"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+                      LastKnownName="TransformGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="259c1559-3dde-498a-9a64-6f1180c20efe"
+            name="BranchGroup create_Menu"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="29b62775-51fd-4082-b215-41d54fa55270"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c8dcef3-97f2-4525-9659-6efa43010738"
+                      LastKnownName="BranchGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9b2565d6-09e4-4718-815f-216934b4518a"
+            name="TransformGroup create_game"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a3375dae-7290-4610-a011-b59e7a392246"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+                      LastKnownName="TransformGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="746f2e35-f592-4848-8d19-640eb3278250"
+            name="TransformGroup create_game1"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aa4c8857-cb0b-4e87-85f8-0fa515b09a4c"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+                      LastKnownName="TransformGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="37f96f84-c5b0-43bf-a72b-6f3049422c6a"
+            name="TransformGroup create_game2"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="87b170cc-f4dc-4542-89ec-c29900805c8e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+                      LastKnownName="TransformGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4358fa36-f3a8-41c4-b2b3-fd39e5d93e5b"
+            name="BranchGroup create_Maze1"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6a6be6be-e636-4377-a911-a0d3eb26aa12"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c8dcef3-97f2-4525-9659-6efa43010738"
+                      LastKnownName="BranchGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e5380860-3b96-4bff-b270-c642d1263ac2"
+            name="BranchGroup create_Maze2"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="49ad2021-e45f-42f7-a561-bc93c9ca3321"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c8dcef3-97f2-4525-9659-6efa43010738"
+                      LastKnownName="BranchGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="337a5a5f-8727-422e-a692-b909a60a411f"
+            name="BranchGroup create_Maze3"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="510f82b9-6584-4563-9e82-4b7429dd2761"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c8dcef3-97f2-4525-9659-6efa43010738"
+                      LastKnownName="BranchGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="85c6060e-ce77-45e0-90ad-644282d19338"
+            name="MainFrame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dd4955bf-f76b-4899-9502-35d94c0b41c0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e509d768-2817-4fe8-a921-6001782807ba"
+                      LastKnownName="Void"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3d85062d-9561-499a-8ea3-76b8a032226a"
+            name="Maze1Frame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6bf7525e-2ea4-4ad6-8ba1-4269809d9184"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e509d768-2817-4fe8-a921-6001782807ba"
+                      LastKnownName="Void"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="958372f8-3a12-4593-bcf5-077a743b0134"
+            name="Maze2Frame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4e967c23-7364-47c5-8ef4-54d722f319d0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e509d768-2817-4fe8-a921-6001782807ba"
+                      LastKnownName="Void"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e3b2a869-c96a-4e91-a6e5-11c9a16d3da8"
+            name="Maze3Frame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e92d5ff2-0708-484d-9f14-90de32f2e976"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e509d768-2817-4fe8-a921-6001782807ba"
+                      LastKnownName="Void"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="20e01cf2-9578-49cd-b9e0-18e6edfbd519"
+            name="keyPressed"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f8f4817f-d3d2-4421-9037-dcd2b489a459"
+                  name="KeyEvent evt"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="af988ccc-718b-4bae-a094-6c4177991205"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e509d768-2817-4fe8-a921-6001782807ba"
+                      LastKnownName="Void"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e490d3de-984b-469d-a1dc-9be970e88a66"
+            name="keyReleased"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f742511f-b4ca-4a29-af71-524d1891b71a"
+                  name="KeyEvent evt"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="814755a6-373a-49b3-a30e-745eb944c256"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e509d768-2817-4fe8-a921-6001782807ba"
+                      LastKnownName="Void"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1963dc1b-9ba8-4d20-828a-c6a888232fca"
+            name="mouseClicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7630f5f4-fcc2-46de-8a16-2202e7484f0d"
+                  name="MouseEvent event"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ccb734fb-03ed-494e-93ff-07d16a21a993"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e509d768-2817-4fe8-a921-6001782807ba"
+                      LastKnownName="Void"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="11a6ae90-fcab-4fd7-83d8-dde3854a547d"
+            name="game"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8d478444-e656-4caf-8001-9bf160bde432"
+                  name="BranchGroup sceneBG"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="11b81e75-7f55-4a01-a163-61b4cfdc6d4e"
+            name="PointSound pointSound"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="61cd84b9-01fd-4476-a5d1-7166752c2c5a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="04ebd4a5-c74a-433f-8c4c-54cc9d41c919"
+                      LastKnownName="PointSound"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="785e1c6c-924f-4086-b663-72e6e39c7e60"
+            name="enableAudio"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eb6cbe49-51fd-492e-884d-8e811579221f"
+                  name="SimpleUniverse simple_U"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4b67874b-71a1-4f6a-bea3-831a5ae0e31a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e509d768-2817-4fe8-a921-6001782807ba"
+                      LastKnownName="Void"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="84288ade-9002-4870-adff-f85ae639e564"
+        name="pacMan"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="8264aad9-1431-412c-9566-782cbdf7a586"
+            isDerived="false"
+            sourceEndRoleName="pacMan"
+            targetEndRoleName="game"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1fa10da3-9c8f-411f-90fa-415fa824df26"
+              LastKnownName="game"
+              LastKnownLocation="Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f83b7b71-d0b4-4306-a23c-e50c46029472"
+                  name="pacMan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0a32c24-ae5f-4a9a-a0d8-76e907a3d7b7"
+                  name="game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="17d3ec48-cdca-42e0-8c10-287042c78f6b"
+            name="Alpha rotationAlpha;"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c4f00a8c-0589-4f55-8aed-1311d0fca2f3"
+            name="BranchGroup objBG;"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="96cb47ca-2bc3-45cd-8d0d-43dc2b203983"
+            name="TransformGroup objTG;"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2688f3ce-a78e-49b4-b68f-ccbe223e1857"
+            name="TransformGroup objRG;"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="64e4d08c-5027-4057-bdfe-f107d1a6a954"
+            name="double scale;"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="afd12d8f-9703-4b5f-9661-1bd7f457a041"
+            name="Vector3f post;"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b47b9023-154b-4394-9051-75a1794b6751"
+            name="Shape3D obj_shape;"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="152dcbc1-78e4-4a0a-ae07-61bf7be48513"
+            name="PositionInterpolator P[]"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <defaultValue>
+              <literalString
+                Id="a1d3ddfb-a348-42d7-9fe4-e8d8188dd930"
+                name="DefaultValue"
+                value="new PositionInterpolator[4];" />
+            </defaultValue>
+          </property>
+          <property
+            Id="699f6fbd-88ce-47ec-8d1d-66e74ea9dfc9"
+            name="PositionInterpolator[] Pos_Int"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <defaultValue>
+              <literalString
+                Id="9d0a5417-e67f-446b-bb81-f2de8f2b9456"
+                name="DefaultValue"
+                value="new PositionInterpolator[4];" />
+            </defaultValue>
+          </property>
+          <property
+            Id="dc8111fb-0f1f-4051-bf83-2f87acee3c20"
+            name="TransformGroup posTG"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c6fa9e0b-4c5b-4bbb-a3af-09dfb3b9333b"
+            name="Appearance app"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ed69ab58-df9a-4e04-b60a-f423a69689be"
+            name="Color3f[] mtl_clr"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9f8f8b08-7b71-4627-b357-a666e1da5efd"
+            name="position_Object"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="39f822e2-9671-4ba8-b831-5b10eea2f97a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+                      LastKnownName="TransformGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="70dd787e-fe64-468d-90e1-750a669bf8bf"
+            name="add_Child"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="508e30fa-3e91-4a46-a787-7bce2bb18f85"
+                  name="TransformGroup nextTG"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="26dbee0f-d2e8-4128-a196-f03f31cff700"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+                      LastKnownName="TransformGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0eed6732-9280-4f1b-aca7-095e3ac02907"
+            name="Alpha get_Alpha"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a4d24073-f8a2-4bd0-b59b-1c4baf22b6a4"
+            name="Scene loadShape"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="254570f2-f246-4e13-9e2d-5bc61a462f57"
+                  name="String obj_name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8f1e01ff-6c99-4a23-a446-ba3ba72244b4"
+            name="transform_Object"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7eca910d-657d-4fb6-93ec-b9ad2b4c466a"
+                  name="String obj_name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f7e65aa-ab82-41c8-903b-75b5395fd94c"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e509d768-2817-4fe8-a921-6001782807ba"
+                      LastKnownName="Void"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bdeaf4ef-b116-4de6-98d6-9717a7cbf724"
+            name="obj_Appearance"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="17fc08fc-b645-488f-bcd0-cfe14884a325"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e509d768-2817-4fe8-a921-6001782807ba"
+                      LastKnownName="Void"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="44a7f9b1-e94b-4849-945f-3358baa48872"
+        name="objTG" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+        name="TransformGroup" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="1b45d857-f657-434d-ab92-2424c687251b"
+        name="TransformGroup(" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a26881fb-4ed6-4e1d-a3dc-5f38995efaf8"
+        name="Option_Shapes"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="907e8206-6e5a-4d2d-9f21-b09211735e35"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c9e3b53f-337c-475b-bddb-e8f05480409d"
+              LastKnownName="Main_Menu"
+              LastKnownLocation="Project.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="31959c20-80da-4b98-914c-238a01361a02"
+            name="PositionInterpolator[] Pos_Int"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f3fb1fdf-902d-4bfe-b283-f7cd6e9e30ad"
+            name="TransformGroup objTG"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="170e3886-1265-4ff4-99a5-1d9ff8fb1ee9"
+            name="Texture textured_App"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="369d8188-1cf9-46a6-a86d-2f1b5e86d08e"
+                  name="String Name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="afef8c4d-53ef-46a3-9f9a-fda5b92e53db"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="12c24857-39f2-43e4-bc00-ee6dd36481d0"
+                      LastKnownName="Texture2D"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="12c24857-39f2-43e4-bc00-ee6dd36481d0"
+        name="Texture2D" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7a521a12-f486-499e-87a3-7ad2094fc5c8"
+        name="ColorString"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="6e24c882-f68f-4ee6-a576-5460bcfa3398"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c9e3b53f-337c-475b-bddb-e8f05480409d"
+              LastKnownName="Main_Menu"
+              LastKnownLocation="Project.uml" />
+          </generalization>
+          <generalization
+            Id="b3d3dfaf-afa8-4526-ad27-4ff524e8e441"
+            isSubstitutable="false">
+            <classMoniker
+              Id="84288ade-9002-4870-adff-f85ae639e564"
+              LastKnownName="pacMan"
+              LastKnownLocation="Project.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="2ef05fc4-b7a5-4b29-8ca2-4392d9f17f01"
+            name="PositionInterpolator[] Pos_Int"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="030dd8bd-1640-4a4c-aa0d-1f756de1ef80"
+            name="String str"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1870fdb3-b939-42e8-9bcf-0f69df7c7ec6"
+            name="Color3f clr"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="70b3ac96-5a46-4d7f-b2b6-59ac40775d91"
+            name="double scl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1b9de941-5b9c-4993-9440-416999fd9012"
+            name="Point3f pos"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e3271bb0-cf70-497b-81ff-84d2365bc716"
+            name="ColorString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="da3697a4-1f69-4863-9c06-7c15112f78fc"
+                  name="String str_ltrs"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="81998db1-a5ee-4117-8879-eabfcb069b60"
+                  name="Color3f str_clr"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c07e6dd3-1ca7-471b-83c0-d7725f5fe5bd"
+                  name="double s"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b6be71a5-18f2-4c77-8a6e-2f10ceed486d"
+                  name="Point3f p"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="614f83f9-2ccd-4a53-b1a7-e782f31eb205"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10d727a1-4e66-408b-97e9-07b4095a69c8"
+                      LastKnownName="TransformGroup"
+                      LastKnownLocation="Project.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e509d768-2817-4fe8-a921-6001782807ba"
+        name="Void" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5edd9492-cc8c-41cd-96ea-3948da65afc7"
+        name="ColorString"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="436025ef-fb7b-43c0-82c3-e86303615b18"
+        name="MazeMaking"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="09c14b1b-be21-42b9-bb44-12868df7709d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="84288ade-9002-4870-adff-f85ae639e564"
+              LastKnownName="pacMan"
+              LastKnownLocation="Project.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="b036f44c-4dc1-4296-8287-07bb1327d8ef"
+            name="Attribute1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="369522f8-6c6a-417c-b153-50668cb23a52"
+            name="mazeMaking"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3c6f6c4f-e839-4ea4-a254-f4778b4b62ac"
+        name="Maze1Making"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d89dc77a-a782-4351-8ca2-8b43b6fdb3d1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="84288ade-9002-4870-adff-f85ae639e564"
+              LastKnownName="pacMan"
+              LastKnownLocation="Project.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="d24fb354-779f-4d7d-94df-4eb4ab5da681"
+            name="Attribute1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4541c28b-ad13-44b8-ba65-1e447f665230"
+            name="maze1Making"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8a8e228e-d05c-42ef-bfde-05ec59e44375"
+        name="Maze2Making"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="402fcc98-f0aa-4e1e-a085-5515b907dfda"
+            isSubstitutable="false">
+            <classMoniker
+              Id="84288ade-9002-4870-adff-f85ae639e564"
+              LastKnownName="pacMan"
+              LastKnownLocation="Project.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="c905054f-6493-47fb-aa9b-9ebb0fc9d900"
+            name="Attribute1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b9eb70ed-d23e-4802-a40e-f5b8da7d055a"
+            name="maze2Making"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="cfdf874b-f3bc-48c1-9c62-29e55315dfa8"
+        name="long" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0d436c70-73ce-4944-8237-2c0df98414f9"
+        name="Int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0c8dcef3-97f2-4525-9659-6efa43010738"
+        name="BranchGroup" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="04ebd4a5-c74a-433f-8c4c-54cc9d41c919"
+        name="PointSound" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
